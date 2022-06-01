@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
@@ -6,7 +6,7 @@ import Gallery from "./pages/gallery";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="gallery" element={<Gallery />}>
@@ -14,7 +14,7 @@ function App() {
             <Route path="search" element={<Gallery />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
