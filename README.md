@@ -20,7 +20,7 @@ The page which can search any gifs based on inputed keyword.
 
 ## Demo App
 
-You can try the app on `https://rainbow-beijinho-2355b4.netlify.app`.
+You can try the app on [here](https://rainbow-beijinho-2355b4.netlify.app).
 
 ========================================================
 
