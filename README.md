@@ -1,3 +1,25 @@
+# Project Overview
+
+This project is about showing and searching some gifs that contain urls below:
+
+### `/`
+
+Home Page that contain 2 menus; `IRON MAN GIPHY` and `SEARCH YOUR GIPHY`.
+
+### `/gallery`
+
+The page showing gifs related to `Iron Man`.
+
+### `/gallery/:query`
+
+The page showing gifs related to any keyword on `pathname`.
+
+### `/gallery/search`
+
+The page which can search any gifs based on inputed keyword.
+
+==========================================================
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
