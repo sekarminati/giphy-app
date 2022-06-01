@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
@@ -6,15 +6,14 @@ import Gallery from "./pages/gallery";
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="gallery" element={<Gallery />}>
-            <Route path=":query" element={<Gallery />} />
-            <Route path="search" element={<Gallery />} />
-          </Route>
+          <Route path="/gallery/search" element={<Gallery />} />
+          <Route path="/gallery/:query" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
