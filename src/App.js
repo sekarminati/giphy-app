@@ -8,10 +8,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery/search" element={<Gallery />} />
-          <Route path="/gallery/:query" element={<Gallery />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery />}>
+            <Route path=":query" element={<Gallery />} />
+            <Route path="search" element={<Gallery />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
